@@ -25,9 +25,9 @@ class Comment
     #[ORM\Column(type: 'datetime_immutable')]
     private $createdAt;
 
-    #[ORM\ManyToOne(targetEntity: Conference::class, inversedBy: 'comments')]
+    #[ORM\ManyToOne(inversedBy: 'comments')]
     #[ORM\JoinColumn(nullable: false)]
-    private $conference;
+    private Conference $conference;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
     private $photoFilename;
