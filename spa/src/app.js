@@ -2,10 +2,11 @@ import {h, render} from 'preact';
 
 function App() {
     return (
-
-        Hello world!
+            <div>
+                Hello world!
+            </div>
 
 )
 }
 
-render(, document.getElementById('app'));
+render(<App/>, document.getElementById('app'));
