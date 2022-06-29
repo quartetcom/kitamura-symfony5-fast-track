@@ -1,6 +1,6 @@
 acl profile {
    # Authorize the local IP address (replace with the IP found above)
-   "192.168.0.1";
+   "160.86.107.176";
    # Authorize Blackfire servers
    "46.51.168.2";
    "54.75.240.245";
